@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colorful</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <script type="text/javascript">
+      function changeColor() {
+        for (i = 1; i < 6; i++) {
+          let div = document.querySelector(
+            ".container > div:nth-child(" + i + ")"
+          );
+          let color =
+            "#" +
+            (0x1234560 + Math.random() * 0xffffff).toString(16).substr(1, 6);
+          div.style.backgroundColor = color;
+        }
+        setTimeout(changeColor, 2000);
+      }
+      changeColor();
+    </script>
+  </body>
+</html>
