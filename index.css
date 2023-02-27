@@ -2,8 +2,11 @@
   display: grid;
   grid-gap: 1vh;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-rows: repat(auto-fit, minmax(140px, 1fr));
   margin-top: 1vh;
 }
 .container > div {
-  height: 98vh;
+  text-align: center;
+  font-size: 2em;
+  padding: 5vh;
 }
